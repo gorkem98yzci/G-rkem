@@ -1,0 +1,43 @@
+Public partial class Form:Form
+{
+Public Form1()
+{
+InitializeComponet();
+}
+İnt hakkın =0,tahmini_Sayin,sayi;
+Private void Form1_Load(object sender,EventArgs  e)
+{
+Random rnd=new Random();
+Sayi=rnd.Next(0,100);
+}
+Private void tahmin_Buton_Click(object sender,EventArgs  e)
+{
+İf (hakkın <=10)
+{
+tahmini_sayin=int.Parse(tahmin_sayin.Text);
+if (sayi== tahmini_Sayin)
+{
+MessageBox.Show(“Tamam”);
+
+}
+else if(sayi> tahmini_Sayin);
+{
+ListBox1.Items.Add(tahmini_Sayin);
+tahmini_Sayin.Text=””;
+hakkın++;
+label1.Text=”Sayın küçük.”;
+}
+	else if(sayi> tahmini_Sayin);
+{
+ListBox1.Items.Add(tahmini_Sayin);
+tahmini_Sayi.Text=””;
+hakkın++;
+label1.Text=”Sayın büyük.”;
+  }
+}
+else if(hakkın>=10)
+{
+MessageBox.Show(“Hakkın doldu.”);
+  }
+ }
+}
